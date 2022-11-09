@@ -1,28 +1,28 @@
-# 抽奖程序
+# chương trình xổ số
 
-年会抽奖程序，3D 球体抽奖，支持奖品信息配置，参与抽奖人员信息`Excel`导入，抽奖结果`Excel`导出
+Chương trình xổ số họp thường niên, xổ số soi cầu 3D, hỗ trợ cấu hình thông tin dự thưởng, `Excel` nhập thông tin nhân sự xổ số,` Excel` xuất kết quả xổ số
 
-如果该程序对你有帮助😎😎😎，希望给个⭐**star**⭐喔。😘😘😘😍🥰🎉🎈🎃
+Nếu chương trình này hữu ích với bạn 😎😎😎, tôi hy vọng sẽ cho một ⭐ ** sao ** ⭐. 😘😘😘😍🥰🎉🎈🎃
 
-> 立即体验一下： [https://moshang-xc.github.io/lottery/](https://moshang-xc.github.io/lottery/)
+> Hãy thử ngay bây giờ: [https://moshang-xc.github.io/lottery/](https://moshang-xc.github.io/lottery/)
 
-## 技术
+## Công nghệ
 
-技术：Node + Express + Three.js
+Công nghệ: Node + Express + Three.js
 
-后台通过`Express`实现
+Chương trình phụ trợ được thực hiện thông qua `Express`
 
-前端抽奖界面通过`Three.js`实现 3D 抽奖球，引用了`Three.js`的官方 3D 示例
+Giao diện xổ số phía trước thực hiện các quả bóng xổ số 3D thông qua `Three.js`, trích dẫn ví dụ 3D chính thức của` Three.js`
 
-## 功能描述：
+## Mô tả chức năng:
 
-1. 可将抽奖结果进行保存实时下载到 excel 中🎉
-2. 已抽取人员不在参与抽取，抽中的人员不在现场可以重新抽取🎁
-3. 刷新或者关掉服务器，会保存当前已抽取的数据，不会进行数据重置，只有点击界面上的重置按钮，才能重置抽奖数据🧧
-4. 每次抽取的奖品数目可配置🎈
-5. 抽取完所有奖品后还可以继续抽取特别奖(例如：现在抽取红包，追加的奖品等)，此时默认一次抽取一个🧨
+1. Bạn có thể lưu kết quả xổ số và tải xuống để vượt trội trong thời gian thực🎉
+2. Những người đã được rút thăm không tham gia vào buổi vẽ, và những người đã được vẽ có thể được vẽ lại nếu họ không có mặt tại chỗ 🎁
+3. Làm mới hoặc tắt máy chủ sẽ lưu dữ liệu đã trích xuất hiện tại và không đặt lại dữ liệu. Chỉ bằng cách nhấp vào nút đặt lại trên giao diện, dữ liệu xổ số mới có thể được đặt lại 🧧
+4. Số lượng giải thưởng được rút ra mỗi lần có thể được cấu hình 🎈
+5. Sau khi tất cả các giải thưởng đã được rút ra, bạn có thể tiếp tục rút thăm các giải đặc biệt (ví dụ: rút bao lì xì ngay bây giờ, các giải thưởng bổ sung, v.v.), tại thời điểm này, theo mặc định, mỗi lần rút thăm
 
-## 预览
+## xem trước
 
 ![lottery.gif](https://raw.githubusercontent.com/moshang-xc/blog/master/share/lottery.gif)
 
@@ -32,33 +32,33 @@
 
 ![end.jpg](https://raw.githubusercontent.com/moshang-xc/blog/master/share/end.jpg)
 
-## 安装
+## Cài đặt
 
 ```
 git clone https://github.com/moshang-xc/lottery.git
 
 cd lottery
 
-# 服务端插件安装
+# Cài đặt plugin máy chủ
 cd server
 npm install
 
-# 前端插件安装
+# Cài đặt plugin front-end
 cd ../product
 npm install
 
-# 打包
+# Build
 npm run build
 
-# 运行
+# Run
 npm run serve
 
-# 开发调试
+# Chạy với dev
 npm run dev
 
 ```
 
-## 目录结构
+## Cấu trúc thư mục
 
 ```
 Lottery
@@ -78,51 +78,51 @@ Lottery
 │   └── package.js
 ```
 
-> 1. product 为前端页面目录
-> 2. package.josn web 项目配置文件
-> 3. webpack.config.js 打包配置文件
-> 4. server 为服务器目录
-> 5. config 为奖品信息的配置文件
+> 1. sản phẩm là thư mục trang đầu tiên
+> 2. tệp cấu hình dự án web package.josn
+> 3. Tệp cấu hình đóng gói webpack.config.js
+> 4. máy chủ là thư mục máy chủ
+> 5. config là tập tin cấu hình thông tin giải thưởng
 
-## 配置信息
+## Thông tin cấu hình
 
-### 抽奖用户信息配置
+### Cấu hình Thông tin Người dùng Xổ số
 
-抽奖用户信息在**`server/data/user.xlsx`**文件中，按文件格式进行填充，不能修改文件名和列头
+Thông tin người dùng xổ số nằm trong tệp ** `server /data/user.xlsx` **, được điền theo định dạng tệp, không thể sửa đổi tên tệp và tiêu đề cột
 
-### 奖品信息配置
+### Cấu hình Thông tin Giải thưởng
 
-奖品的配置信息填写在**server/config.js**文件中，不能修改文件名。
+Thông tin cấu hình của giải thưởng được điền vào tệp ** server / config.js **, không thể sửa đổi tên tệp.
 
-**其中奖品 prizes 的配置描述如下：**
+** Mô tả cấu hình các giải thưởng như sau: **
 
-| 参数  | 值类型 | 描述                                                         |
-| ----- | ------ | ------------------------------------------------------------ |
-| type  | Number | 奖品类型，唯一标识，0 是默认特别奖的占位符，其它奖品不可使用 |
-| count | Number | 奖品数量                                                     |
-| text  | String | 奖项名称                                                     |
-| title | String | 奖品描述                                                     |
-| img   | String | 奖品的图片地址，图片在**img**目录下                          |
+| tham số | kiểu giá trị | mô tả                                                                                                         |
+| ------- | ------------ | ------------------------------------------------------------------------------------------------------------- |
+| loại    | Số           | Loại giải, định danh duy nhất, 0 là phần giữ chỗ cho giải đặc biệt mặc định, các giải khác không được sử dụng |
+| đếm     | Số           | Số giải                                                                                                       |
+| text    | String       | Tên giải thưởng                                                                                               |
+| tiêu đề | Chuỗi        | Mô tả giải thưởng                                                                                             |
+| img     | String       | Địa chỉ giải thưởng, bức tranh có trong thư mục ** img **                                                     |
 
 ```js
-// 奖品信息，第一项为预留项不可修改，其他项可根据需要修改
+// Thông tin giải thưởng, vật phẩm đầu tiên được bảo lưu và không thể sửa đổi, các vật phẩm khác có thể sửa đổi khi cần
 let prizes = [{
         type: 0,
         count: 1000,
         title: "",
-        text: "特别奖"
+        text: "Giải đặc biệt"
     },
     {
         type: 1,
         count: 2,
-        text: "特等奖",
-        title: "神秘大礼",
+        text: "Giải thưởng lớn",
+        title: "Món quà bí mật",
         img: "../img/secrit.jpg"
     },
     {
         type: 2,
         count: 5,
-        text: "一等奖",
+        text: "Giải nhất",
         title: "Mac Pro",
         img: "../img/mbp.jpg"
     }
@@ -130,22 +130,24 @@ let prizes = [{
 ];
 ```
 
-### 奖品每次抽取个数配置
+### Cấu hình số lượng giải thưởng rút thăm mỗi lần
 
-**EACH_COUNT**用于配置每次的抽奖个数，与 prizes 奖品一一对应，例如上面的奖品配置对应的抽奖个数配置如下：
+** EACH_COUNT ** được sử dụng để định cấu hình số lần rút thăm mỗi lần, tương ứng với các giải thưởng một đối một. Ví dụ: cấu hình số lần rút thăm tương ứng với cấu hình giải thưởng ở trên như sau:
 
-```js
+` ` js
 const EACH_COUNT = [1, 1, 5];
-```
+`` '
 
-如上配置，表示一次抽取的奖品个数顺序为：特别奖每次抽一个，特等奖每次抽一个，一等奖每次抽五个
+Cấu hình trên có nghĩa là thứ tự số lượng các giải thưởng trong một lần quay là: mỗi lần quay một giải đặc biệt, mỗi lần quay một giải đặc biệt và mỗi lần quay năm giải nhất.
 
-### 企业标识配置
+### Cấu hình Nhận dạng Doanh nghiệp
 
-该标识用于显示在抽奖卡片上。
+Logo này được sử dụng để hiển thị trên thẻ rút thăm.
 
-```js
+` ` js
 const COMPANY = "MoShang";
-```
-## License
+`` '
+
+## Giấy phép
+
 MIT
