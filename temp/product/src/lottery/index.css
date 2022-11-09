@@ -260,36 +260,30 @@ button:active {
 }
 
 .progress-bar-striped {
-  background-image: -webkit-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-image: -o-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
-  background-image: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.15) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(255, 255, 255, 0.15) 75%,
-    transparent 75%,
-    transparent
-  );
+  background-image: -webkit-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent);
+  background-image: -o-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent);
+  background-image: linear-gradient(45deg,
+      rgba(255, 255, 255, 0.15) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(255, 255, 255, 0.15) 50%,
+      rgba(255, 255, 255, 0.15) 75%,
+      transparent 75%,
+      transparent);
   -webkit-background-size: 8px 8px;
   background-size: 8px 8px;
 }
@@ -369,9 +363,10 @@ button:active {
   cursor: not-allowed;
 }
 
+
 .shine span {
   position: absolute;
-  display: block;
+  display: block
 }
 
 .shine span:nth-child(1) {
@@ -380,17 +375,17 @@ button:active {
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #03e9f4);
-  animation: animate1 1s linear infinite;
+  animation: animate1 1s linear infinite
 }
 
 @keyframes animate1 {
   0% {
-    left: -100%;
+    left: -100%
   }
 
   50%,
   100% {
-    left: 100%;
+    left: 100%
   }
 }
 
@@ -401,17 +396,17 @@ button:active {
   height: 100%;
   background: linear-gradient(180deg, transparent, #03e9f4);
   animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
+  animation-delay: .25s
 }
 
 @keyframes animate2 {
   0% {
-    top: -100%;
+    top: -100%
   }
 
   50%,
   100% {
-    top: 100%;
+    top: 100%
   }
 }
 
@@ -422,17 +417,17 @@ button:active {
   height: 2px;
   background: linear-gradient(270deg, transparent, #03e9f4);
   animation: animate3 1s linear infinite;
-  animation-delay: 0.5s;
+  animation-delay: .50s
 }
 
 @keyframes animate3 {
   0% {
-    right: -100%;
+    right: -100%
   }
 
   50%,
   100% {
-    right: 100%;
+    right: 100%
   }
 }
 
@@ -443,19 +438,20 @@ button:active {
   height: 100%;
   background: linear-gradient(360deg, transparent, #03e9f4);
   animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
+  animation-delay: .75s
 }
 
 @keyframes animate4 {
   0% {
-    bottom: -100%;
+    bottom: -100%
   }
 
   50%,
   100% {
-    bottom: 100%;
+    bottom: 100%
   }
 }
+
 
 .shine.prize-item {
   /* width: 24vh; */
